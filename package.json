@@ -27,7 +27,7 @@
   "devDependencies": {
     "@libreservice/my-widget": "^0.1.2",
     "@libreservice/my-worker": "^0.4.0",
-    "@playwright/test": "^1.33.0",
+    "@playwright/test": "^1.34.0",
     "@rollup/plugin-json": "^6.0.0",
     "@rollup/plugin-node-resolve": "^15.0.2",
     "@rollup/plugin-replace": "^5.0.2",
@@ -43,7 +43,6 @@
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-vue": "^9.13.0",
     "naive-ui": "^2.34.3",
-    "playwright": "^1.33.0",
     "rollup": "^3.22.0",
     "rollup-plugin-esbuild": "^5.0.0",
     "typescript": "^5.0.4",

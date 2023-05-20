@@ -9,11 +9,23 @@ import { appName } from './package.json'
 const resources = ['boilerplate.js', 'boilerplate.wasm']
 
 const workbox: VitePWAOptions["workbox"] = {
-  maximumFileSizeToCacheInBytes: 13631488,
   globPatterns: [
     '**/*.{js,css,html}',
     'apple-touch-icon.png',
     ...resources
+  ]
+}
+
+if (process.env.LIBRESERVICE_CDN) {
+  workbox.manifestTransforms = [
+    manifest => ({
+      manifest: manifest.map(entry => resources.includes(entry.url) ? {
+        url: process.env.LIBRESERVICE_CDN + entry.url,
+        revision: entry.revision,
+        size: entry.size
+      } : entry),
+      warnings: []
+    })
   ]
 }
 

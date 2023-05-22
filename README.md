@@ -5,6 +5,12 @@ Quick start a new LibreService project.
 
 https://my-boilerplate.vercel.app/
 
+This is a **STATIC** website so you **DON'T** need to own a server to host it.
+
+All computation is performed in browser, thank to Web Assembly.
+
+It's also a [PWA](https://web.dev/progressive-web-apps/), so you can install it like a native App and use it **OFFLINE**.
+
 ## Self host
 Download latest [artifact](https://github.com/LibreService/my_rime/releases/download/latest/my-boilerplate-dist.zip) built by GitHub Actions.
 
